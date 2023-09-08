@@ -618,6 +618,11 @@ progress {
   height: auto;
 }
 
+.img-ul-bullet {
+  height: 20px;
+
+}
+
 .figure {
   display: inline-block;
 }
@@ -3042,7 +3047,7 @@ textarea.form-control-lg {
 }
 
 .btn-group-kara .btn-primary {
-  width: 32%;
+  width: 24%;
 }
 
 .btn-primary {
@@ -11307,4 +11312,11 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
+
+}
+
+.ul-no-bullets {
+  list-style: none;
+  padding-left: 12px;
+/*  padding: 0px 0px 0px 16px;*/
 }
