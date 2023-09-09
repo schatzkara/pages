@@ -11315,8 +11315,23 @@ textarea.form-control-lg {
 
 }
 
-.ul-no-bullets {
+.ul-no-bullets-12 {
   list-style: none;
   padding-left: 12px;
 /*  padding: 0px 0px 0px 16px;*/
+}
+
+.ul-no-bullets-24 {
+  list-style: none;
+  padding-left: 24px;
+/*  padding: 0px 0px 0px 16px;*/
+}
+
+.ul-with-bullets {
+  list-style: none;
+  padding-left: 24px;
+}
+
+.li-with-award-bullet {
+  <img class="img-ul-bullet" src="assets/award.png" />
 }

@@ -19,9 +19,9 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="research.html">Research</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="research.html">Research</a></li>
                         <li class="nav-item"><a class="nav-link" href="teaching.html">Teaching</a></li>
                         <li class="nav-item"><a class="nav-link" href="publications.html">Publications</a></li>
                         <li class="nav-item"><a class="nav-link" href="cv.html">CV</a></li>
@@ -32,8 +32,84 @@
         </nav>
         <!-- Page Content-->
         <div class="container px-4 px-lg-5">
-            <!-- Heading Row-->
-            <h1 class="text-center"> Coming soon! </h1>
+            <div class="row gx-4 gx-lg-5">
+                <h1> Research Interests </h1>
+                    <ul>
+                        <li> Knowledge Graphs </li>
+                        <li> Knowledge Discovery </li>
+                        <li> Data Management </li>
+                        <li> Data Science </li>
+                    </ul>
+                <h1> Research Statement </h1>
+                    <p> Coming soon! </p>
+                <h1> Research Projects </h1>
+                <!-- <div class="col-md-4 mb-5"> -->
+                    <h2 class="font-weight-light"> Computational Drug Repurposing </h2>
+                    <ul>
+                        <li> Collaborators: ARAGORN team at the Renaissance Computing Institute (RENCI) </li>
+                        <li> Collaborating with researchers on the ARAGORN team at RENCI, who developed the large-scale biomedical graph called ROBOKOP, to computationally search the graph for potentially promising drug-repurposing hypotheses, or drug-disease relationships that may lead to treatment development after confirming clinical trials. I have been working specifically on knowledge graph inference rule generation for ARAGORN’s “creative-mode” queries, which enable users to query a node pair of interest to them; if no relationship between them exists in ROBOKOP, then inference rules are applied in succession to identify any possible inferred connection between the node pair. The ARAGORN team has begun collaborations with the non-profit Every Cure, which will bring the drug-repurposing hypotheses generated to clinical trials for further drug development. </li>
+                    </ul>
+                <!-- </div> -->
+                    <h2 class="font-weight-light"> Knowledge Graph Abstraction </h2>
+                    <ul>
+                        <li> Developed an approach to abstract, or compress, knowledge graphs in such a way that very little information is lost. In this way, the abstract knowledge graph can be used for more efficient analytics, while not sacrificing much of the effectiveness of the analytics or their results. We have tested knowledge graph inference rule mining on the compressed graphs and have found that the mining stage is significantly faster, but very few inference rules are lost on the compressed graphs. We are preparing a manuscript of this work. </li>
+                    </ul>
+
+                    <h2 class="font-weight-light"> Iterative Metapath Mining Project </h2>
+                    <ul>
+                        <li> Developed an approach to mine metapaths from knowledge graphs in a ping-pong style with domain scientists as humans-in-the-loop. The approach uses pairs of related and unrelated nodes and mine metapaths that bring the related nodes together in latent embedding space, while driving the unrelated nodes apart. In this way, the metapaths discovered provide some semantic reasoning about the relation between the node pairs. We are preparing a manuscript of this work. </li>
+                    </ul>
+
+                    <h2 class="font-weight-light"> Provenance-Aware Data Integration </h2>
+                    <ul>
+                        <li> Developed a domain-agnostic approach to integrate data across multiple granularity levels: standard-level data and summary-level data. During the integration the appropriate standard-level data that contributes to the summary-level data is identified and maintained as provenance to enable efficient and effective querying of both the data and provenance after integration. I specifically worked on the problem formalism and well as helping to develop the approach. A paper written about this work has been accepted for publication. </li>
+                        <li> Publications </li>
+                            <ul> 
+                                <li> Pei-Yu Hou, Jing Ao, <b>Kara Schatz</b>, Alexey Gulyuk, Yaroslava Yingling, Rada Chirkova. “Provenance-Aware Data Integration And Querying for Knowledge Graphs.” Manuscript accepted for publication in September 2023. </li>
+                            </ul>
+                    </ul>
+
+                    <h2 class="font-weight-light"> Knowledge Graph Promiscuity </h2>
+                    <ul>
+                        <li> Developed the notion of promiscuity in knowledge graphs, which is related to node degree and connectivity. Devised an algorithm for finding least promiscuous paths in knowledge graphs, which have been found to be more interesting to domain scientists than promiscuous paths. I specifically worked on helping to create the algorithm and worked heavily on the formalism of promiscuity an promiscuous path-searching. We have submitted a manuscript of this work for publication. </li>
+                        <li> Publication<!-- s </li>
+                            <ul> 
+                                <li> D. Korn, P. Hou, <b>Kara Schatz</b>, J. Beasley, R. Chirkova, and A. Tropsha. “Towards Improving the Efficiency of Drug Repurposing by Leveraging Node Promiscuity in Biomedical Knowledge Graphs.” Manuscript submitted for publication in May 2023. </li>
+                            </ul> -->
+                    </ul>
+
+                    <h2 class="font-weight-light"> Knowledge Graph Refinement </h2>
+                    <ul>
+                        <li> Refined and improved the “Drug Repurposing Knowledge Graph” released by AWS. Previously this knowledge graph consisted only of complex identifiers connected by relationships. Through web-scraping and database cross-referencing, we have refined all the semantic triples to now include clear entity names, relationship types, and other desired attributes. Overall, this makes the knowledge graph more usable for analysis, especially for biomedical researchers and users, since the data can be understood. We published a workflow describing our curation steps in the 2022 IEEE International Conference on Big Data (Big Data), where I made a presentation about this project. </li>
+                        <li> Publications </li>
+                            <ul> 
+                                <li> <b>Kara Schatz</b>, D. Korn, A. Tropsha, and R. Chirkova, “Workflow for Domain- and Task-Sensitive Curation of Knowledge Graphs, with Use Case of DRKG,” in 2022 IEEE Big Data, pp. 3692–3701, IEEE, 2022. </li>
+                            </ul>
+                    </ul>
+
+                    <h2 class="font-weight-light"> Explaining Hypotheses on Knowledge Graphs </h2>
+                    <ul>
+                        <li> Designed a domain-agnostic approach for extracting and evaluating explanations from knowledge graphs for proposed hypotheses. The approach derives explanations via backward-chaining using knowledge graph triples and inference rules to justify the truth of the hypotheses. The explanation-evaluation metrics offer a global evaluation of each explanation based on existing evidence in the knowledge graph. We tested the approach on the biomedical application of explaining and evaluating drug-repurposing hypotheses, and we collaborated with biomedical experts to study the domain reasonableness of our output. We published this work in the 2021 IEEE International Conference on Big Data (Big Data), where I made a presentation about this project. I also presented a poster about this work at the 15th Annual NCSU Graduate Student Research Symposium. We have submitted an extended manuscript of this work for publication. </li>
+                        <li> Publications </li>
+                            <ul> 
+                                <li> <b>Kara Schatz</b>, C. Melo-Filho, A. Tropsha, and R. Chirkova, “Explaining Drug-Discovery Hypotheses Using Knowledge-Graph Patterns,” in 2021 IEEE Big Data, pp. 3709–3716, IEEE, 2021. </li>
+                                <!-- <li> <b>Kara Schatz</b>, J. Beasley, C. Melo-Filho, A. Tropsha, and R. Chirkova. “E3D2: Extracting and Evaluating Explanations for Drug-Discovery Hypotheses Using Biomedical Knowledge Graphs.” Manuscript submitted for publication in February 2023. </li> -->
+                            </ul>
+                    </ul>
+
+                    <h2 class="font-weight-light"> Identifying Unusual Temporal Trends Project </h2>
+                    <ul>
+                        <li> Developed a heuristic method to efficiently and effectively identify outlier temporal trends in data sets. I specifically worked on the theoretical justification for our approach, which involved multiple time-complexity proofs, as well as deriving a formula to estimate user efforts in unassisted searches of the search space for temporal trends. A paper written about this work has been accepted for publication, and we are preparing an extended manuscript of this work. </li>
+                        <li> Publications </li>
+                            <ul> 
+                                <li> Jing Ao, <b>Kara Schatz</b>, and Rada Chirkova. “Trend Surfing: Effective and Efficient Retrieval of Unusual Temporal Trends.” Manuscript accepted for publication in May 2023. </li>
+                                <!-- <li> journal paper </li> -->
+                            </ul>
+                    </ul>
+
+                   
+            </div>
+        </div>
         </div>
         <!-- Footer-->
         <footer class="py-5 bg-dark">
