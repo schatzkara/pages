@@ -1,0 +1,4 @@
+removed BASIC_NODE
+base.type_ontology --> BTO
+base.schemastaging --> BSS
+common.topic --> CT
